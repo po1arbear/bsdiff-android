@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<View>(R.id.btn).setOnClickListener {
 
-            verifyStoragePermissions(this)
-//            startActivity(Intent(this, SecondActivity::class.java))
+//            verifyStoragePermissions(this)
+            startActivity(Intent(this, SecondActivity::class.java))
         }
     }
 
@@ -38,8 +38,11 @@ class MainActivity : AppCompatActivity() {
     private fun applyAPK() {
 
 
-        var oldpath = (Environment.getExternalStorageDirectory().absolutePath + File.separator
-                + "bs_old.apk")
+//        var oldpath = (Environment.getExternalStorageDirectory().absolutePath + File.separator
+//                + "bs_old.apk")
+
+        // 获取旧apk路径   applicationInfo.sourceDir
+        var oldpath = applicationInfo.sourceDir;
 
         var newpath = (Environment.getExternalStorageDirectory().absolutePath + File.separator
                 + "composed_apk.apk")

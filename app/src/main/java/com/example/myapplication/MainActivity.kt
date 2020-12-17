@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<View>(R.id.btn).setOnClickListener {
+        findViewById<View>(R.id.btn_get_user).setOnClickListener {
 
 //            verifyStoragePermissions(this)
             startActivity(Intent(this, SecondActivity::class.java))

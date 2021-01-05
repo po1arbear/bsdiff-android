@@ -6,7 +6,7 @@
 #include "patchUtils.h"
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_example_myapplication_PatchUtils_patch(JNIEnv *env, jclass type, jstring oldApkPath_,
+Java_com_fcbox_diffupdate_PatchUtils_patch(JNIEnv *env, jclass type, jstring oldApkPath_,
                                            jstring newApkPath_, jstring patchPath_) {
 
     int argc = 4;

@@ -1,16 +1,11 @@
-package com.example.myapplication;
+package com.fcbox.diffupdate;
 
-/**
- * @author lwy 2019-06-08
- * @version v1.0.0
- * @name PatchUtils
- * @description
- */
+
 public class PatchUtils {
 
     // Used to load the 'native-lib' library on application startup.
     static {
-        System.loadLibrary("update-lib");
+        System.loadLibrary("diff-update");
     }
 
     /**

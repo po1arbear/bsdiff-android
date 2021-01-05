@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import com.fcbox.diffupdate.PatchUtils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
@@ -27,10 +28,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<View>(R.id.btn_get_user).setOnClickListener {
+        findViewById<View>(R.id.btn).setOnClickListener {
 
-//            verifyStoragePermissions(this)
-            startActivity(Intent(this, SecondActivity::class.java))
+            verifyStoragePermissions(this)
+//            startActivity(Intent(this, SecondActivity::class.java))
         }
     }
 
